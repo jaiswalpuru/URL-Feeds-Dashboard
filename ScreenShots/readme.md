@@ -1,1 +1,1 @@
-# Contains the ApplicationShots
+# Contains the Application ScreenShots
