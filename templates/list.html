@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard</title>
+        <style media="screen">
+            .middle {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <img  class='middle' src="/static/dash.png" alt="" style="height:50px;width:50px">
+        <h1 align='center' style="color:#4169e1;">Twitter Feeds</h1>
+        <h2 align='center' style="color:#1e90ff">ID:{{nm}}</h2>
+        <table align='center' border=1 style="color:#1e90ff;">
+            <thead>
+                <td>Time</td>
+                <td>Twitter_ID</td>
+                <td>Urls</td>
+            </thead>
+            {% for row in rows %}
+                {% if nm == row.ID %}
+                    <tr>
+                        <td>{{row["timeStamps"][:20]}}</td>
+                        <td>{{row["twitter_names"]}}</td>
+                        <td><a style="color:#4169e1;" href="{{row["url_links"]}}">{{row["url_links"]}}</a></td><br>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+        <h3><a href="http://twitter.com/logout" style="float:right;">Logout</a></h3>
+    </body>
+</html>
