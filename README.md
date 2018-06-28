@@ -7,3 +7,5 @@
 4)pip install twitter<br>
 ## To run the application 
 1)python home.py
+
+2)Go To - http://127.0.0.1:5000/ (localhost)
