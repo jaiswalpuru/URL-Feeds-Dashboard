@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome</title>
+        <style media="screen">
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <img class='center' src="static/twit.png" alt="">
+        <form align='center' action="{{ url_for('twitter_login')}}" method="POST">
+            <h3 align='center'>Twiiter-ID</h3>
+            <input type="text" name="ID" value="" style="height=200px; width=250px; "><br>
+            <input type="submit" value="Twitter Authorize Access" style="height:200px; width:250px">
+        </form>
+    </body>
+</html>
