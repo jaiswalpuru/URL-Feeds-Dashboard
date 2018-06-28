@@ -1,4 +1,4 @@
-<h1>OneDirectAssignment</h1>
+# OneDirectAssignment<br>
 ### This application fetches the ulrs present in the tweets and stores it in the database. Then it fetches from the database of the specified user and displays on the dashboard
 ## To run the app<br>
 ## Run the following commands<br>
