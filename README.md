@@ -2,6 +2,7 @@
 ### This application fetches the ulrs present in the tweets and stores it in the database. Then it fetches from the database of the specified user and displays on the dashboard
 ## To run the app<br>
 ## Run the following commands<br>
+#### Download and extract the files to a directory and through commandline go to the directory
 1)Install python3<br>
 2)pip install flask<br>
 3)pip install flask-dance<br>
